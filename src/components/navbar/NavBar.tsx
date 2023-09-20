@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import { logo, menu, close } from "../../assets";
 import { navLinks } from "../../data/Constants";
 const NavBar: FC = () => {
@@ -7,7 +7,12 @@ const NavBar: FC = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
+      <img src={logo} alt="hoobank" className="w-[32px] h-[32px]" />
+      <div className="logo px-8 ">
+        <h1 className="font-semibold text-[28px]">
+          <span className="text-gradient">NINOV Tech</span>
+        </h1>
+      </div>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (

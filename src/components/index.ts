@@ -8,3 +8,4 @@ export { default as Clients } from "./clients/Clients";
 export { default as CTA } from "./cta/CTA";
 export { default as Testimonials } from "./testimonials/Testimonials";
 export { default as Footer } from "./footer/Footer";
+export { default as GetStarted } from "./getStarted/GetStarted";

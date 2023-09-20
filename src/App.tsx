@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { BrowserRouter } from "react-router-dom";
 import styles from "./styles";
 import {
   Billing,
