@@ -1,15 +1,37 @@
 import { FC } from "react";
+import { BrowserRouter } from "react-router-dom";
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+} from "./components";
+import "./App.css";
 
 const App: FC = () => {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut possimus,
-        hic libero iste ducimus nihil cumque. Quam sequi cum illum delectus qui
-        inventore quo dignissimos repudiandae incidunt? Ullam, magnam suscipit?
-      </p>
-    </div>
+    <BrowserRouter>
+      <div className="relative z-0 bg-primary">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 };
 
