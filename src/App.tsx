@@ -1,37 +1,48 @@
 import { FC } from "react";
 import { BrowserRouter } from "react-router-dom";
+import styles from "./styles";
 import {
-  // About,
-  // Contact,
-  // Experience,
-  // Feedbacks,
-  // Hero,
+  Billing,
+  Business,
+  CTA,
+  CardDeal,
+  Clients,
+  Footer,
+  Hero,
   Navbar,
-  // Tech,
-  // Works,
-  // StarsCanvas,
+  Stats,
+  Testimonials,
 } from "./components";
 import "./App.css";
 
 const App: FC = () => {
   return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+    <div className="bg-primary w-full overflow-hidden">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
           <Navbar />
-          {/* <Hero /> */}
-        </div>
-        {/* <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks /> */}
-        <div className="relative z-0">
-          {/* <Contact /> */}
-          {/* <StarsCanvas /> */}
         </div>
       </div>
-    </BrowserRouter>
+
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero />
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Stats />
+          <Business />
+          <Billing />
+          <CardDeal />
+          <Testimonials />
+          <Clients />
+          <CTA />
+          <Footer />
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -1,9 +1,10 @@
-export { default as About } from "./about/About";
-export { default as Contact } from "./contact/Contact";
-export { default as Experience } from "./experience/Experience";
-export { default as Feedbacks } from "./feedbacks/Feedbacks";
+export { default as Stats } from "./stats/Stats";
+export { default as Business } from "./business/Business";
+export { default as Billing } from "./billing/Billing";
+export { default as CardDeal } from "./cardDeal/CardDeal";
 export { default as Hero } from "./hero/Hero";
 export { default as Navbar } from "./navbar/NavBar";
-export { default as Tech } from "./tech/Tech";
-export { default as Works } from "./works/Work";
-export { default as StarsCanvas } from "./starsCanvas/StarsCanvas";
+export { default as Clients } from "./clients/Clients";
+export { default as CTA } from "./cta/CTA";
+export { default as Testimonials } from "./testimonials/Testimonials";
+export { default as Footer } from "./footer/Footer";
